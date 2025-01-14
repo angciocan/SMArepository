@@ -34,25 +34,9 @@ fun StudyingPlatformHomeScreen(navigation: NavController, authentificationViewMo
 
     val authState = authentificationViewModel.authState.observeAsState()
 
-//    LaunchedEffect(authState.value){
-//
-//        when(authState.value){
-//            is AuthState.Loading -> navigation.navigate("studingPlatformLoginScreen")
-//            else -> Unit
-//        }
-//    }
-
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
-
-//        Image(
-//            painter = painterResource(id = R.drawable.studyingplatform),
-//            contentDescription = null,
-//            contentScale = ContentScale.FillBounds,
-//            modifier = Modifier.fillMaxSize()
-//        )
-
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,

@@ -46,12 +46,6 @@ fun LazyListScope.SessionList(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ){
-//                Image(
-//                    modifier = Modifier.size(120.dp),
-//                    painter = painterResource(R.drawable.clock),
-//                    contentDescription = SessionEmptyListText
-//                )
-
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Text(

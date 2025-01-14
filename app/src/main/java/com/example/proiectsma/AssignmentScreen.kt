@@ -243,7 +243,6 @@ fun AssignmentScreen(
                     AssignmentPriorityButton(
                          modifier = Modifier.weight(1f),
                          content = assignmentPriority.priorityType,
-                         //backgroudColor = assignmentPriority.priorityColor,
                          borderColor = if(assignmentPriority == AssignmentPriority.SECONDARY){
                             assignmentPriority.priorityColor
                          } else assignmentPriority.priorityColor,
@@ -269,7 +268,6 @@ fun AssignmentScreen(
             ){
                 Text(
                     text = "Math",
-                    //textSize = Modifier.size(14.dp)
                 )
 
                 IconButton(

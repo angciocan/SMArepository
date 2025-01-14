@@ -239,17 +239,6 @@ fun StudyingPlatformSignUpScreen(navigation: NavController, authentificationView
                 ) {
                     Text(UserSignUpText)
                 }
-
-//                Button(
-//                    onClick = {
-//                        authentificationViewModel.signUp(
-//                            userEmailText.value,
-//                            userPasswordText.value
-//                        )
-//                    }
-//                ) {
-//                    Text(UserLoginText)
-//                }
             }
         }
 }

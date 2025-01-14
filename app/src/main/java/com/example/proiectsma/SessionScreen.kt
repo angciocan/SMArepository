@@ -230,8 +230,7 @@ fun ActualSubjects(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = forSubject,
-                //textSize = Modifier.size(14.dp)
+                text = forSubject
             )
 
             IconButton(

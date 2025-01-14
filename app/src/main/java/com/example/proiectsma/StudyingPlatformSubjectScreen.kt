@@ -50,9 +50,6 @@ fun StudyingPlatformSubjectScreen(
 
     val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
 
-//    val listState = rememberLazyListState()
-//    val listStateExpanded = remember { derivedStateOf { listState.firstVisibleItemIndex == 0 } }
-
     var isAddSubjectDialogOpen = rememberSaveable {mutableStateOf(false) }
     var isDeleteSubjectDialogOpen = rememberSaveable {mutableStateOf(false) }
     var isEditSubjectDialogOpen = rememberSaveable {mutableStateOf(false) }
@@ -150,18 +147,6 @@ fun StudyingPlatformSubjectScreen(
         },
 
         floatingActionButton = {
-//            ExtendedFloatingActionButton(
-//                onClick = { navigation.navigate("assignmentScreen")},
-//                icon = { Icon(imageVector = Icons.Default.Add, contentDescription = "Add assignment") },
-//                text = {
-//                    Text(
-//                        text = "Add assignment",
-//                        fontWeight = FontWeight.Bold
-//                    )
-//                },
-//                modifier = Modifier.border(width = 2.dp, color = Color.Black,
-//                    shape = RoundedCornerShape(16.dp))
-//            )
 
             Button(
                 onClick = { navigation.navigate("assignmentScreen")},
@@ -186,7 +171,6 @@ fun StudyingPlatformSubjectScreen(
     ){
         paddingValue->
         LazyColumn(
-            //state = listState,
             modifier = Modifier.fillMaxSize().padding(paddingValue)
         ){
              item{
@@ -324,15 +308,6 @@ fun SubjectInformations(
                 strokeCap = StrokeCap.Round,
                 color = Color(0xFFFF8B00)
             )
-
-//            CircularProgressIndicator(
-//                modifier = Modifier.padding(14.dp),
-//                strokeWidth = 4.dp,
-//                progress = 1f,
-//                strokeCap = StrokeCap.Round,
-//                color = Color(0xFFFF8B00)
-//
-//            )
 
             Text(
                 text = "$percentProgress%",

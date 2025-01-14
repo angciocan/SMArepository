@@ -163,7 +163,6 @@ fun SubjectDialog(
             containerColor = Color(0xFF008BFF),
 
             shape = RoundedCornerShape(16.dp),
-            //modifier = Modifier.border(3.dp, Color.Black, RoundedCornerShape(16.dp))
         )
     }
 }

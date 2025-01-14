@@ -335,7 +335,6 @@ fun SubjectObject(
     onClick: () -> Unit,
     navigation: NavController
 ){
-    //navigation.navigate("studyingPlatformSubjectScreen")
     Box(
        modifier = Modifier.size(200.dp).clickable{ navigation.navigate("studyingPlatformSubjectScreen") }.background(
            color = Color.Gray,
